@@ -1,0 +1,37 @@
+.social-icons{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        margin-right: 15px;
+        &:nth-child(3){
+            margin-right: 0px;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.social-icons-30{
+    margin-top: 20px;
+    width: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        margin-right: 25px;
+        &:nth-child(2){
+            margin-right: 20px;
+        }
+        &:nth-child(3){
+            margin-right: 0px;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
