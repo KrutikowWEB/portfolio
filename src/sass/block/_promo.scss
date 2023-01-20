@@ -33,4 +33,18 @@
             text-decoration: none;
         }
     }
+    &__logo{
+        text-align: center;
+        svg{
+            width: 200px;
+            height: 152px;
+            &:hover{
+                .logo{
+                    fill: $main-color;
+                   /*  stroke: aqua; */
+                }
+                cursor: pointer;
+            }
+        }   
+    }
 }
