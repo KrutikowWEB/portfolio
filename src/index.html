@@ -28,12 +28,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ABOUT ME</a></li>
-                    <li class="menu__link"><a href="#">MY EXPERIENCE</a></li>
-                    <li class="menu__link"><a href="#">MY SKILLS</a></li>
-                    <li class="menu__link"><a href="#">MY WORKS</a></li>
-                    <li class="menu__link"><a href="#">PRICE LIST</a></li>
-                    <li class="menu__link"><a href="#">CONTACTS</a></li>
+                    <li class="menu__link"><a href="#about-me">ABOUT ME</a></li>
+                    <li class="menu__link"><a href="#experience">MY EXPERIENCE</a></li>
+                    <li class="menu__link"><a href="#skills">MY SKILLS</a></li>
+                    <li class="menu__link"><a href="#portfolio">MY WORKS</a></li>
+                    <li class="menu__link"><a href="#price">PRICE LIST</a></li>
+                    <li class="menu__link"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
             <div class="menu__icons">
@@ -59,8 +59,8 @@
                     <h3 class="deskr-mt10 title title_fz16 promo__deskr">my name is Andrey</h3>
                     <h1 class="title title_fz48 promo__title">I`m a web developer from Molodechno</h1>
                     <div class="promo__buttons">
-                        <a href="#" class="promo__link btn">portfolio</a>
-                        <a href="#" class="promo__link">ABOUT ME</a>
+                        <a href="#portfolio" class="promo__link btn">portfolio</a>
+                        <a href="#about-me" class="promo__link">ABOUT ME</a>
                     </div>
                 </div>
                 <div class="promo__right">
@@ -70,7 +70,7 @@
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
             <div class="about-me__grid-container">
                 <div class=" about-me__grid-elem_foto"></div>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="useful">
+    <section class="useful" id="experience">
         <div class="container">
             <h3 class="title title_fz16 deskr">Experience</h3>
             <h2 class="title title_section">How can I be useful</h2>
@@ -153,7 +153,7 @@
         </div>
     </section>
 
-    <section class="used">
+    <section class="used" id="skills">
         <div class="container">
             <h3 class="deskr title title_fz16">Skills</h3>
             <h2 class="title title_section">What do I use in my work?</h2>
@@ -187,13 +187,6 @@
                     <h4 class="used__item-name used__item-name-mt33px title title_fz14">Jquery</h4>
                     <div class="used__item-text title title_fz12">The Jquery library will speed up development. Without the need to integrate it into the project, we will not, but the skill of working with it is present</div>
                 </div>
-               <!--  <div class="used__item">
-                    <div class="used__item-icon">
-                        <img src="icons/i use/React.svg" alt="React">
-                    </div>
-                    <h4 class="used__item-name title title_fz14">React</h4>
-                    <div class="used__item-text title title_fz12">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
-                </div> -->
                 <div class="used__item">
                     <div class="used__item-icon">
                         <img src="icons/i use/Node.js.svg" alt="Node">
@@ -228,7 +221,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h3 class="deskr title title_fz16">Portfolio</h3>
             <h2 class="title title_section">My works</h2>
@@ -244,7 +237,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h3 class="deskr title title_fz16">Price list</h3>
             <div class="price__line line"></div>
@@ -273,7 +266,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__grid-container">
                 <div class="contacts__foto"> <img src="img/foto/Photo.jpg" alt="foto"></div>
@@ -314,6 +307,8 @@
         </div>
     </section>
 
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+$('a[href^="#"]').click(function(){
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+    return false;
+    });
+
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close');
