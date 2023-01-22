@@ -5,7 +5,6 @@
         min-height: 600px;
         display: grid;
         grid-template-columns: 400px 570px;
-        grid-template-rows: 245px 315px;
         column-gap: 70px;
         row-gap: 40px;
     }
@@ -28,7 +27,6 @@
             grid-row-start: 2;
             display: grid;
             grid-template-columns: repeat(2, 260px);
-            grid-template-rows: repeat(2, 116px);
             column-gap: 50px;
             row-gap: 20px;
         }
