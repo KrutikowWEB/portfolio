@@ -79,6 +79,6 @@ gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'font
 /**
  * Push dist to gh-pages
  */
-gulp.task('deploy', function () {
+/* gulp.task('deploy', function () {
     return ghPages.publish('dist');
-});
+}); */
