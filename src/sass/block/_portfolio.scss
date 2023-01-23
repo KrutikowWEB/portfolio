@@ -5,7 +5,7 @@
     &__grid-container{
         margin-top: 60px;
         display: grid;
-        grid-template: repeat(2, minmax(100px,auto))/repeat(4, minmax(100px,280px));
+        grid-template: repeat(2, minmax(100px, 280px))/repeat(4, minmax(100px,280px));
         gap: 5px;
     }
     &__item{
