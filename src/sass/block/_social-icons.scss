@@ -1,5 +1,5 @@
 .social-icons{
-    width: 90px;
+    width: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,9 +8,21 @@
         &:nth-child(3){
             margin-right: 0px;
         }
-        img{
-            width: 20px;
-            height: 20px;
+        svg{
+            fill: #000;
+            transition: all .15s;
+            &:hover{
+                fill: $main-color;
+            }
+        }
+        &_menu{
+            svg{
+                fill: #000;
+                transition: all .15s;
+                &:hover{
+                    fill: #FFF;
+                }
+            }
         }
     }
 }
@@ -21,17 +33,4 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__link{
-        margin-right: 25px;
-        &:nth-child(2){
-            margin-right: 20px;
-        }
-        &:nth-child(3){
-            margin-right: 0px;
-        }
-        img{
-            width: 30px;
-            height: 30px;
-        }
-    }
 }
