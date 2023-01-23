@@ -1,3 +1,5 @@
+new WOW().init();
+
 $('a[href^="#"]').click(function(){
     var target = $(this).attr('href');
     $('html, body').animate({scrollTop: $(target).offset().top}, 800);
@@ -22,3 +24,4 @@ const counters = document.querySelectorAll('.used__item-skill-degr'),
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+

@@ -26,5 +26,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "wow.js": "^1.2.2"
+  }
 }
