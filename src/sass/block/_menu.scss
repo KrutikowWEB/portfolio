@@ -53,6 +53,15 @@
         top: 25px;
         right: 25px;
         cursor: pointer;
+        &_path{
+            fill:#000000;
+            transition: all .15s;
+        }
+        &:hover{
+            .menu__close_path{
+                fill: #fff;
+            }
+        }
     }
     &__list{
         list-style-type: none;

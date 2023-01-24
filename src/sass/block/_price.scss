@@ -9,16 +9,15 @@
         margin-top: 60px;
         padding: 0 50px;
         display: grid;
-        grid-template: repeat(3, 44px)/repeat(2,370px);
-        row-gap: 15px;
+        grid-template: repeat(2, minmax(44px, auto))/repeat(2,370px);
+        row-gap: 30px;
         justify-content: space-between;
     }
     &__item{
         padding-left: 25px;
         display: flex;
+        gap: 5px;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
         position: relative;
         &::before{
             content: '';
