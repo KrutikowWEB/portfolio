@@ -2,17 +2,27 @@
     .sidepanel{
         display: none;
     }
+    .promo{
+        &__wrapper{
+            padding-left: 50px;
+        }
+    }
 }
 
 @media (max-width: 1200px){
     .container{
         max-width: 960px;
     }
+    .promo{
+        &__photo{
+            right: 9%;
+        }
+    }
     .about-me{
         &__grid-container{
             grid-template-columns: 400px 520px;
             column-gap: 40px;
-            width: 960px;
+            width: 100%;
         }
         &__grid-elem{
             &_list-skill{
@@ -49,6 +59,12 @@
     .container{
         max-width: 720px;
     }
+    .promo{
+        &__title{
+            font-size: 42px;
+            line-height: 54px;
+        }
+    }
     .title{
         &_section{
             font-size: 30px;
@@ -59,15 +75,13 @@
         padding-top: 40px;
         &__grid-container{
             grid-template-columns: 300px 390px;
-            grid-template-rows: 300px 280px;
+            grid-template-rows: repeat(2, minmax(100px, auto));
             row-gap: 20px;
             column-gap: 30px;
-            width: 720px;
         }
         &__grid-elem{
             &_list-skill{
                 grid-template-columns: 1fr; 
-                grid-template-rows: repeat(3, 75px);
             }
         }
         &__title{
@@ -173,16 +187,14 @@
     .about-me{
         &__grid-container{
             grid-template-columns: 1fr;
-            grid-template-rows: 340px auto auto;
+            grid-template-rows: repeat(3, auto);
             row-gap: 20px;
-            width: 540px;
         }
         &__grid-elem{
             &_foto{
                 grid-column-start: 1;
                 grid-row-start: 1;
                 grid-row-end: 2;
-                background: url('../../img/foto/Photo.jpg') center center/cover no-repeat;
             }
             &_text{
                 grid-column-start: 1;
@@ -231,7 +243,7 @@
         &__grid-container{
             margin-top: 30px;
             padding: 0;
-            grid-template: repeat(6,44px)/540px;
+            grid-template: repeat(4,44px)/540px;
         }
     }
     .contacts{
@@ -280,12 +292,22 @@
         margin-top: 15px;
     }
     .promo{
-        background: url('../../img/Promo.png') no-repeat 55%/cover ;
+        &__wrapper{
+            text-align: center;
+            padding-left: 0;
+        }
+        &__photo{
+            display: none;
+        }
         &__title{
             font-size: 26px;
             line-height: 39px;
             width: 300px;
             margin-top: 9px;
+        }
+        &__buttons{
+            padding: 0 20px;
+            width: auto;
         }
         .hamburger{
             right: 20px;
@@ -294,27 +316,17 @@
     .menu{
         &__block{
             width: 250px;
+            padding-top: 50px;
+            padding-left: 30px;
         }
         &__list{
             padding-left: 15px;
         }
     }
     .about-me{
-        margin-top: 40px;
-        &__grid-container{
-            grid-template-columns: 1fr;
-            grid-template-rows: 340px auto auto;
-            row-gap: 20px;
-            width: 100%;
-        }
         &__grid-elem{
             &_text{
                 margin-top: 20px;
-            }
-            &_list-skill{
-                grid-template-columns: minmax(260px, 540px);
-                grid-template-rows: repeat(3, auto);
-                row-gap: 20px;
             }
         }
         &__title{
@@ -349,12 +361,12 @@
             &-soft{
                 padding: 0 15px;
                 margin-top: 20px;
-                grid-template: repeat(7, minmax(100px, 270px))/270px;
+                grid-template: repeat(6, minmax(100px, auto))/270px;
                 gap: 10px;
             }
             &-skill{
                 padding: 0 10px;
-                grid-template: repeat(6,70px)/minmax(100px,300px);
+                grid-template: repeat(4,70px)/minmax(100px,300px);
                 gap: 40px;
             }
         }
@@ -415,10 +427,9 @@
         &__policy{
             grid-column: 1;
             grid-row: 1;
-            display: grid;
-            grid-template: 36px/11px 159px;
-            column-gap: 10px;
-            justify-content: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
         }
     }
 }

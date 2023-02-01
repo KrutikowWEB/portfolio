@@ -1,4 +1,9 @@
+if ($(window).width() <= 992){ 
+    $(".wow").removeClass("wow");
+    }
+
 new WOW().init();
+
 
 $('a[href^="#"]').click(function(){
     var target = $(this).attr('href');
