@@ -7,6 +7,12 @@
         grid-template-columns: 400px minmax(185px, 585px);
         justify-content: space-between;
     }
+    &__foto{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
     &__info{
         padding-top: 6px;
         display: flex;

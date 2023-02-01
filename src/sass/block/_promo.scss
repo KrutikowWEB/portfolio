@@ -4,11 +4,16 @@
     background: #EAE7DC;
     padding-top: 105px;
     &__wrapper{
-        display: flex;
-        justify-content: space-between;
+        height: 100%;
     }
     &__photo{
-        width: 100%;
+        position: absolute;
+        right: 15%;
+        bottom: 0;
+        width: 33%;
+        img{
+            object-fit: cover;
+        }
     }
     &__title{
         width: 601px;
